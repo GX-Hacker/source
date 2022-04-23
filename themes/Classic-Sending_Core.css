@@ -1,0 +1,47 @@
+/* Classic Sending */
+
+/* Imports */
+@import url(https://gx-hacker.github.io/source/css/Theme-Support_Core.css);
+
+/* Default variables */
+:root {
+    /* Theme support */
+    --theme-name: "Classic Sending";
+    --cs-build: "4";
+
+    /* Text variables */
+    --sendingt: var(--sending-text, "(sending...)");
+    --failedt: var(--failed-text, "(FAILED)");
+}
+
+/* Remove graying for sending */
+.messageContent-2t3eCI.isSending-3SiDwE {
+    opacity: 1;
+}
+/* Configure additional text */
+.messageContent-2t3eCI:after {
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 1;
+    vertical-align: baseline;
+    margin-left: 0.3rem;
+}
+/* Sending text and color */
+.messageContent-2t3eCI.isSending-3SiDwE:after {
+    content: var(--sendingt);
+    color: var(--text-muted);
+}
+/* Failed text and color */
+.messageContent-2t3eCI.isFailed-2b8sCy:after {
+    content: var(--failedt);
+    opacity: 0.8;
+}
+
+/* Theme support */
+#app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div.base-2jDfDU:before {
+    display: var(--version110_cs, block) !important;
+}
+
+[id*="Classic Sending"] .bd-addon-header .bd-meta:before {
+    content:"build " var(--cs-build) " ";
+}
