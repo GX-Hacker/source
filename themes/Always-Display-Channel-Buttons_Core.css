@@ -1,0 +1,23 @@
+/* Always Display Channel Buttons */
+
+@import url(https://gx-hacker.github.io/source/css/Theme-Support_Core.css);
+:root {
+    --adcb-build: "11";
+    --theme-name: "Always Display Channel Buttons";
+}
+.children-283-lq *,
+.children-1MGS9G * {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.userLimit-VbEkeM {
+    margin-left: 3px;
+}
+#app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div.base-2jDfDU:before {
+    display: var(--version110_adcb, block) !important;
+}
+
+[id*="Always Display Channel Buttons"] .bd-addon-header .bd-meta:before {
+    content:"build " var(--adcb-build) " ";
+}
