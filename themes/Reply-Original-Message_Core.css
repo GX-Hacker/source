@@ -1,0 +1,20 @@
+/* Reply Original Message */
+
+@import url(https://gx-hacker.github.io/source/css/Theme-Support_Core.css);
+:root {
+    --rom-build: "4";
+    --theme-name: "Reply Original Message";
+}
+
+.repliedMessage-3Z6XBG .repliedTextPreview-1bvxun .repliedTextContent-2hOYMB, 
+.repliedMessage-3Z6XBG .repliedTextPreview-1bvxun .repliedTextContent-2hOYMB .inline {
+    white-space: pre-line;
+}
+
+#app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div.base-2jDfDU:before {
+    display: var(--version110_rom, block) !important;
+}
+
+[id*="Reply Original Message"] .bd-addon-header .bd-meta:before {
+    content:"build " var(--rom-build) " ";
+}
