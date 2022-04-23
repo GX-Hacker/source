@@ -1,0 +1,44 @@
+/* Typing At Top Of Chat Box */
+
+@import url(https://gx-hacker.github.io/source/css/Theme-Support_Core.css);
+:root {
+    --tatocb-build: "10";
+    --theme-name: "Typing At Top Of Chat Box";
+}
+.base-3bcbY3 {
+    bottom: unset;
+    top: -25px;
+}
+.charCounter-7fw40k {
+    bottom: unset;
+    top: -20px;
+    right: 12px;
+}
+#bfredux {
+    top: -15px !important;
+}
+.form-3gdLxP {
+    margin-top: unset !important;
+    padding-top: 0px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+.channelTextArea-1FufC0 {
+    margin-bottom: 8px;
+}
+.barBase-3xxDXu {
+    border-radius: 8px;
+    margin-bottom: 23px;
+    padding-bottom: 0;
+}
+.barBase-3xxDXu:active {
+    margin-bottom: 21px;
+}
+/* Update notice config */
+#app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div.base-2jDfDU:before {
+    display: var(--version110_tatocb, block) !important;
+}
+
+[id*="Typing At Top Of Chat Box"] .bd-addon-header .bd-meta:before {
+    content:"build " var(--tatocb-build) " ";
+}
