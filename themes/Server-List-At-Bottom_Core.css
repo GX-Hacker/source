@@ -1,0 +1,163 @@
+/* Server List At Bottom */
+
+@import url(https://gx-hacker.github.io/source/css/Theme-Support_Core.css);
+:root {
+    --slab-build: "25";
+    --theme-name: "Server List At Bottom";
+}
+:root {
+    --server-size: var(--serverSize, 48px);
+    --server-spacing: var(--serverSpacing, 10px);
+    --server-container: calc(var(--server-size) + 20px);
+}
+
+#app-mount .base-2jDfDU {
+    top: var(--server-container) !important;
+    position: absolute !important;
+    left: 0 !important;
+    width: 100% !important;
+}
+#app-mount .sidebar-1tnWFu {
+    border-radius: 0;
+}
+#app-mount .guilds-2JjMmN {
+    transform-origin: top left;
+    transform: rotate(-90deg);
+    height: 100vw !important;
+    width: var(--server-container);
+    top: var(--server-container);
+    bottom: unset;
+    position: absolute !important;
+    left: 0;
+}
+#app-mount .guilds-2JjMmN .scrollerWrap-1IAIlv {
+    width: calc(100% + 30px);
+}
+#app-mount .guilds-2JjMmN .scroller-2TZvBN > div[style]:not(.listItem-1d8GP4),
+#app-mount .guilds-2JjMmN .scroller-2TZvBN > div[style]:not(.listItem-3SmSlK) {
+    height: auto !important;
+}
+#app-mount .guilds-2JjMmN .svg-2zuE5p,
+#app-mount .guilds-2JjMmN .wrapper-28eC3z,
+#app-mount .guilds-2JjMmN .guildsError-b7zR5H,
+#app-mount .guilds-2JjMmN .placeholderMask-3K9THS {
+    width: var(--server-size);
+    max-height: var(--server-size);
+}
+#app-mount .guilds-2JjMmN [role="group"] {
+    height: auto !important;
+}
+#app-mount .guilds-2JjMmN [class*="pill"] {
+    transform: rotate(-90deg) translateY(calc(var(--server-size) / 2.6));
+    top: calc(var(--server-size) / 2 + 6px);
+}
+.item-2LIpTv {
+    max-height: var(--server-size) !important;
+}
+#app-mount .guilds-2JjMmN .wrapper-z5ab_q {
+    height: var(--server-size) !important;
+}
+#app-mount .guilds-2JjMmN .listItem-1d8GP4,
+#app-mount .guilds-2JjMmN .listItem-3SmSlK {
+    width: var(--server-size);
+    transform: rotate(90deg);
+    margin: var(--server-spacing) 10px;
+    position: unset;
+}
+#app-mount .guilds-2JjMmN .guildSeparator-2ULOMe,
+#app-mount .guilds-2JjMmN .guildSeparator-a4uisj {
+    transform: rotate(90deg);
+    width: var(--server-size);
+}
+#app-mount .guilds-2JjMmN .wrapper-21YSNc {
+    width: var(--server-container);
+}
+#app-mount .guilds-2JjMmN .expandedFolderBackground-2sPsd-,
+#app-mount .guilds-2JjMmN .expandedFolderBackground-1cujaW,
+#app-mount .guilds-2JjMmN .expandedFolderBackground-1kSAf6 {
+    width: var(--server-size);
+    bottom: 0;
+    left: 10px;
+}
+#app-mount .label-2wRs_g {
+    transform: rotate(-90deg);
+    font-size: calc(var(--server-size) / 5);
+}
+#app-mount .guilds-2JjMmN.content-Pph8t6:not(.closed-j55_T-) + .base-2jDfDU {
+    top: calc(var(--server-container) * 2) !important;
+}
+#app-mount .guilds-2JjMmN .frame-oXWS21.listItem-1d8GP4,
+#app-mount .guilds-2JjMmN .frame-oXWS21.listItem-3SmSlK {
+    height: var(--server-size) !important;
+}
+#app-mount .guilds-2JjMmN .frame-oXWS21.listItem-1d8GP4 .wrapper-3kah-n,
+#app-mount .guilds-2JjMmN .frame-oXWS21.listItem-3SmSlK .wrapper-3kah-n {
+    height: 100% !important;
+    max-height: 100% !important;
+}
+#app-mount .guilds-2JjMmN .frame-oXWS21.listItem-1d8GP4,
+#app-mount .guilds-2JjMmN .frame-oXWS21.listItem-3SmSlK {
+    width: 100%;
+    height: 100% !important;
+    max-height: 100% !important;
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+body.foldercontentopened .base-2jDfDU {
+    transition: 0.2s ease !important;
+}
+body #app-mount .base-2jDfDU {
+    top: 0 !important;
+    bottom: var(--server-container) !important;
+}
+body #app-mount .guilds-2JjMmN {
+    top: unset !important;
+    left: 100%;
+    bottom: 0 !important;
+    transform-origin: bottom left;
+    border-top-right-radius: var(--serverlist-radius);
+    border-bottom-right-radius: var(--serverlist-radius);
+}
+body #app-mount .guilds-2JjMmN.content-Pph8t6 {
+    top: unset !important;
+    bottom: var(--server-container) !important;
+}
+body #app-mount .guilds-2JjMmN.content-Pph8t6:not(.closed-j55_T-) + .base-2jDfDU {
+    top: 0 !important;
+    bottom: calc(var(--server-container) * 2) !important;
+}
+.unreadMentionsIndicatorTop-gA6RCh, .unreadMentionsIndicatorBottom-BXS58x {
+    width: calc(var(--server-size) + 21px);
+}
+.content-3at_AU,
+.privateChannels-oVe7HL .layout-1qmrhw,
+.content-1gYQeQ {
+    margin-left: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+.typeThread-2Aqh6X .content-1gYQeQ {
+    margin-left: 36px !important;
+}
+.channel-1Shao0 {
+    margin-left: 0 !important;
+    max-width: unset !important;
+}
+.typingindicator-guild,
+.typingindicator-dms,
+.typingindicator-folder {
+    transform: rotate(-90deg);
+    bottom: 10px !important;
+    right: calc(var(--server-size) - 9px) !important;
+}
+
+#app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div.base-2jDfDU:before {
+    display: var(--version110_slab, block) !important;
+}
+
+[id*="Server List At Bottom"] .bd-addon-header .bd-meta:before {
+    content:"build " var(--slab-build) " ";
+}
