@@ -1,0 +1,19 @@
+/* Text Area Max Height */
+
+@import url(https://gx-hacker.github.io/source/css/Theme-Support_Core.css);
+:root {
+    --tamh-build: "4";
+    --theme-name: "Text Area Max Height";
+}
+
+.scrollableContainer-15eg7h {
+    max-height: var(--maxHeight);
+}
+
+#app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div.base-2jDfDU:before {
+    display: var(--version110_tamh, block) !important;
+}
+
+[id*="Text Area Max Height"] .bd-addon-header .bd-meta:before {
+    content:"build " var(--tamh-build) " ";
+}
