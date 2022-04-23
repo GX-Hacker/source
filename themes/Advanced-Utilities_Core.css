@@ -1,0 +1,97 @@
+/* Advanced Utilities */
+
+@import url(https://gx-hacker.github.io/source/css/Theme-Support_Core.css);
+:root {
+    --au-build: "11";
+    --theme-name: "Advanced Utilities";
+}
+#app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div.base-2jDfDU:before {
+    display: var(--version110_au, block) !important;
+}
+/*    Padding (to fix ITC)                                    start      */
+.username-h_Y3Us,
+.name-3Vmqxm,
+.title-17SveM,
+.member-2gU6Ar {
+    padding-right: 3px;
+}
+/*    Padding (to fix ITC)                                    end        */
+
+/*    UT91 cfg                                                start      */
+/* EXPERIMENTAL FEATURE - DOESN'T WORK WITH QUOTES, ATTACHMENTS, ETC */
+.messageContent-2t3eCI,
+.hasDivider-20M1le,
+.invite-3uuHYQ,
+.wrapper-1HIH0j,
+.guildDetail-3EJhW_,
+.description-X8_53U {
+    text-align: var(--alignMessages);
+    align-items: var(--alignMessages);
+}
+.header-2jRmjb,
+.fontSize16Padding-XoMpjI {
+    text-align: var(--alignNicknames);
+}
+.compact-2Nkcau .contents-2MsGLg {
+    text-align: var(--alignCompactMode);
+}
+.fontSize16Padding-XoMpjI {
+    text-align: var(--typeBox);
+}
+/*    UT91 cfg                                                end        */
+
+/*    UT92 cfg                                                start      */
+.avatar-2e8lTP {
+    width: var(--chatAvatarSize) !important;
+    height: var(--chatAvatarSize) !important;
+}
+/*    UT92 cfg                                                end        */
+
+/*    UT93 cfg                                                start      */
+/* names */
+.name-3_Dsmg,
+.name-28HaxV,
+.name-3Vmqxm,
+.voiceCounter,
+.usernameContainer-3PPkWq .title-338goq {
+    font-size: var(--textSize) !important;
+}
+/* user status */
+.activityText-1rR-8O,
+.activityText-ev7Z1T,
+.subtext-2HDqJ7 {
+    font-size: calc(var(--textSize) / 1.3);
+}
+/* categories and servername */
+.headerText-1-AnT0,
+.container-q97qHp,
+.name-3YKhmS,
+.name-3Uvkvr {
+    font-size: var(--categorySize);
+}
+/* member count plugin */
+#MemberCount {
+    padding-bottom: var(--categorySize);
+}
+/*    UT93 cfg                                                end        */
+
+/*    UT94 cfg                                                start      */
+/* text */
+.name-28HaxV,
+.title-17SveM,
+.channelTabs-name,
+.channelTabs-tabName {
+    text-transform: var(--textTransform, unset);
+}
+/* categories */
+.membersGroup-2eiWxl,
+.name-IbjUBS,
+.container-q97qHp {
+    text-transform: var(--categoryTransform, uppercase);
+}
+/*    UT94 cfg                                                end        */
+
+/*    Others                                                             */
+[id*="Advanced Utilities"] .bd-addon-header .bd-meta:before {
+    content:"build " var(--au-build) " ";
+}
