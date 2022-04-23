@@ -1,0 +1,25 @@
+/* Blur Account Infos */
+
+@import url(https://gx-hacker.github.io/source/css/Theme-Support_Core.css);
+:root {
+    --bai-build: "6";
+    --theme-name: "Blur Account Infos";
+}
+.field-21XZwa .constrainedRow-3y91Xf {
+    filter: blur(var(--blur-amount)) !important;
+    transition: var(--fade-out) !important;
+    transition-delay: var(--fade-out-delay) !important;
+}
+.field-21XZwa .constrainedRow-3y91Xf:hover {
+    filter: blur(var(--blur-amount-on-hover)) !important;
+    transition: var(--fade-in) !important;
+    transition-delay: var(--fade-in-delay) !important;
+}
+
+#app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div.base-2jDfDU:before {
+    display: var(--version110_bai, block) !important;
+}
+
+[id*="Blur Account Infos"] .bd-addon-header .bd-meta:before {
+    content:"build " var(--bai-build) " ";
+}
