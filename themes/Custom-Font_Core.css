@@ -1,0 +1,47 @@
+/* Custom Font (for Discord) */
+
+@import url(https://gx-hacker.github.io/source/css/Theme-Support_Core.css);
+:root {
+    --cf-build: "14";
+    --theme-name: "Custom Font";
+
+    --cf: var(--customFont, Whitney, Whitney Book, Helvetica Neue, Helvetica, Arial, sans-serif);
+    --cbcf: var(--codeBlocksCustomFont, Consolas, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Monaco, Courier New, Courier, monospace);
+
+    --font-display: var(--cf) !important;
+    --font-primary: var(--cf) !important;
+}
+
+::-webkit-input-placeholder,
+body,
+button,
+input,
+select,
+textarea,
+* {
+    font-family: var(--cf);
+}
+span[class*="hljs"],
+span[class*="hljs"] span,
+.codeLine-3a3dbd span span span,
+code,
+.markup-eYLPri code.inline,
+.codeBlockText-311wOq,
+.codeLine-3a3dbd,
+.after_inlineCode-WydEur,
+.before_inlineCode-xn8Llh,
+.inlineCode-2auMQi span,
+.durationTimeDisplay-QwCeRr,
+.durationTimeSeparator-1Cqi9N,
+.powercord-codeblock-table td,
+.maxLength-IdVNmX {
+    font-family: var(--cbcf);
+}
+
+#app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div.base-2jDfDU:before {
+    display: var(--version110_cf, block) !important;
+}
+
+[id*="Custom Font"] .bd-addon-header .bd-meta:before {
+    content:"build " var(--cf-build) " ";
+}
