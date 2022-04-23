@@ -1,0 +1,49 @@
+/* Remove Nitro Tab */
+
+@import url(https://gx-hacker.github.io/source/css/Theme-Support_Core.css);
+:root {
+    --rnt-build: "6";
+    --theme-name: "Remove Nitro Tab";
+}
+/* Hide Nitro tab */
+.privateChannels-oVe7HL .channel-1Shao0[href="/store"] {
+    display: none;
+}
+/* Hide chat box gift button */
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Send a gift"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Send en gave"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Ein Geschenk senden"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Enviar un regalo"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Envoyer un cadeau"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Pošalji poklon"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Invia un regalo"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Siųsti dovaną"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Ajándék küldése"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Verstuur een cadeau"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Wyślij prezent"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Enviar um presente"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Trimite un cadou"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Lähetä lahja"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Skicka en gåva"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Tặng một món quà"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Bir hediye gönder"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Odeslat dárek"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Στείλτε ένα δώρο"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Изпрати подарък"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Отправить подарок"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="Надіслати подарунок"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="ส่งของขวัญ"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="发送礼物"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="ギフトを贈る"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="發送禮物"],
+.channelTextArea-1VQBuV .button-f2h6uQ[aria-label="선물 보내기"] {
+    display: none;
+}
+
+#app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div.base-2jDfDU:before {
+    display: var(--version110_rnt, block) !important;
+}
+
+[id*="Remove Nitro Tab"] .bd-addon-header .bd-meta:before {
+    content:"build " var(--rnt-build) " ";
+}
