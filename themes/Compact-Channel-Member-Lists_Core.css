@@ -1,0 +1,128 @@
+/* Compact Channel Member Lists */
+
+@import url(https://gx-hacker.github.io/source/css/Theme-Support_Core.css);
+:root {
+    --ccml-build: "23";
+    --theme-name: "Compact Channel Member Lists" var(--button-position-fix-status);
+    --button-position-fix-status: "";
+}
+
+/* Channels */
+#app-mount .sidebar-1tnWFu {
+    width: var(--cSize);
+    transition: width var(--time);
+    transition-delay: var(--delayOut);
+}
+#app-mount .sidebar-1tnWFu:hover {
+    width: var(--cSizeOnHover);
+    transition: width var(--time);
+    transition-delay: var(--delayIn);
+}
+.sidebar-1tnWFu .header-3OsQeK .button-2BMPJJ {
+    margin-right: calc(var(--cSize) - var(--cSizeOnHover)) !important;
+    transition: margin-right var(--time) ease;
+    transition-delay: var(--delayOut);
+}
+.sidebar-1tnWFu:hover .header-3OsQeK .button-2BMPJJ {
+    margin-right: 0 !important;
+    transition: margin-right var(--time) ease;
+    transition-delay: var(--delayIn);
+}
+.text-2GsXbW { /* new unreads text */
+    text-align: center;
+}
+.channel-1Shao0 { /* dms */
+    max-width: unset !important;
+}
+.bannerImage-ubW8K- { /* serverbanner */
+    width: var(--cSize);
+    transition: width var(--time);
+    transition-delay: var(--delayOut);
+}
+.sidebar-1tnWFu:hover .bannerImage-ubW8K- { /* serverbanner */
+    width: var(--cSizeOnHover);
+    transition: width var(--time);
+    transition-delay: var(--delayIn);
+}
+/* UserPlayingPanel */
+.sidebar-1tnWFu .actions-zk2vB_ {
+    margin-right: calc(var(--cSize) - var(--cSizeOnHover)) !important;
+    transition: margin-right var(--time) ease;
+    transition-delay: var(--delayOut);
+}
+.sidebar-1tnWFu:hover .actions-zk2vB_ {
+    margin-right: 0 !important;
+    transition: margin-right var(--time) ease;
+    transition-delay: var(--delayIn);
+}
+
+/* Memberlist */
+.membersWrap-3NUR2t {
+    width: var(--mSize);
+    position: relative;
+    min-width: unset;
+    max-width: unset;
+    transition: width var(--time) ease;
+    transition-delay: var(--delayOut);
+}
+.members-3WRCEx {
+    width: var(--mSize);
+    transition: width var(--time);
+    transition-delay: var(--delayOut);
+}
+.membersWrap-3NUR2t:hover .members-3WRCEx {
+    width: var(--mSizeOnHover);
+    transition-delay: var(--delayIn);
+}
+.membersWrap-3NUR2t .scrollerWrap-2lJEkd {
+    width: var(--mSize);
+}
+.membersWrap-3NUR2t:hover {
+    width: var(--mSizeOnHover);
+    transition: width var(--time) ease;
+    transition-delay: var(--delayIn);
+}
+#dv-mount { /* DateViewer */
+    width: var(--mSize) !important;
+    transition: width var(--time) ease;
+    transition-delay: var(--delayOut);
+}
+.membersWrap-3NUR2t:hover #dv-mount {
+    width: var(--mSizeOnHover) !important;
+    transition: width var(--time) ease;
+    transition-delay: var(--delayIn);
+}
+.scroller-2FKFPG.members-3WRCEx {
+    max-width: unset;
+    min-width: unset;
+    width: var(--mSize) + 18px;
+    transition-delay: calc(var(--delayOut) + var(--time));
+}
+.scroller-2FKFPG.members-3WRCEx:hover {
+    width: var(--mSizeOnHover);
+    transition-delay: var(--delayIn);
+}
+.member-2gU6Ar {
+    max-width: unset;
+    min-width: unset;
+    width: calc(var(--mSizeOnHover) - 18px);
+}
+/* Plugin Compatibility */
+/* MemberCount */
+#MemberCount {
+    width: var(--mSize) !important;
+    transition: width var(--time);
+    transition-delay: var(--delayOut);
+}
+.membersWrap-3NUR2t:hover #MemberCount {
+    width: var(--mSizeOnHover) !important;
+    transition-delay: var(--delayIn);
+}
+
+#app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div.base-2jDfDU:before {
+    display: var(--version110_ccml, block) !important;
+}
+
+[id*="Compact Channels And Members"] .bd-addon-header .bd-meta:before {
+    content:"build " var(--ccml-build) " ";
+}
