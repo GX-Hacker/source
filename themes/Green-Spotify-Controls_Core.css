@@ -1,0 +1,131 @@
+/* Green Spotify Controls */
+
+@import url(https://gx-hacker.github.io/source/css/Theme-Support_Core.css);
+:root {
+    --gsc-build: "8";
+    --theme-name: "Green Spotify Controls";
+}
+
+/* Dark theme */
+.theme-dark .barFill-Dhkah7 {
+    background-color: var(--dark-white-color-1, #fff);
+}
+.theme-dark #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE.maximized-vv2Wr0.withTimeline-824fT_ > div.timeline-UWmgAx > div.barText-lmqc5O > div,
+.theme-dark #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE.withTimeline-824fT_ > div.timeline-UWmgAx > div.barText-lmqc5O > div {
+    color: var(--dark-white-color-1, #fff);
+}
+.theme-dark .timeline-UWmgAx:hover .barFill-Dhkah7 {
+    background-color: var(--dark-timeline-hover, #35ed86);
+}
+.theme-dark .grabber-7sd5f5 {
+    background: var(--dark-white-color-1, #fff);
+}
+.theme-dark .container-6sXIoE {
+    background-color: var(--dark-controls-background-color, #1c9a48);
+    color: var(--dark-white-color-1, #fff);
+}
+.theme-dark .song-tIdBpF {
+    font-weight: 600;
+    color: var(--dark-white-color-1, #fff);
+}
+.theme-dark .interpret-F93iqP {
+    font-weight: 500;
+    color: var(--dark-white-color-2, #ffffffa2);
+}
+.theme-dark #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE.maximized-vv2Wr0.withTimeline-824fT_ > div.inner-WRV6k5 > div.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz > button {
+    color: var(--dark-white-color-1, #fff);
+}
+.theme-dark .container-6sXIoE .button-12Fmur.active-6TsW-_ {
+    color: var(--dark-active-buttons, #35ed86) !important;
+}
+.theme-dark #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE.maximized-vv2Wr0.withTimeline-824fT_ > div.inner-WRV6k5 > div.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz > button,
+.theme-dark #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE.withTimeline-824fT_ > div.inner-WRV6k5 > div.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz > button,
+.theme-dark #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE.maximized-vv2Wr0 > div > div.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz > button,
+.theme-dark #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE > div > div.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz > button {
+    color: var(--dark-white-color-1, #fff);
+}
+.theme-dark #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE.maximized-vv2Wr0.withTimeline-824fT_ > div.inner-WRV6k5 > div.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz > button:hover,
+.theme-dark #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE.withTimeline-824fT_ > div.inner-WRV6k5 > div.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz > button:hover,
+.theme-dark #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE.maximized-vv2Wr0 > div > div.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz > button:hover,
+.theme-dark #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE > div > div.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz > button:hover {
+    background-color: var(--dark-button-hover-background, #00000050);
+    border: none !important;
+}
+.theme-dark .bar-g2ZMIm {
+    background-color: var(--dark-timeline-empty-zone, #0000003d);
+}
+
+/* Light theme */
+.theme-light .barFill-Dhkah7 {
+    background-color: var(--light-black-color-1, #000);
+}
+.theme-light #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE.maximized-vv2Wr0.withTimeline-824fT_ > div.timeline-UWmgAx > div.barText-lmqc5O > div,
+.theme-light #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE.withTimeline-824fT_ > div.timeline-UWmgAx > div.barText-lmqc5O > div {
+    color: var(--light-black-color-1, #000);
+}
+.theme-light .timeline-UWmgAx:hover .barFill-Dhkah7 {
+    background-color: var(--light-timeline-hover, #fff);
+}
+.theme-light .grabber-7sd5f5 {
+    background: var(--light-black-color-1, #000);
+}
+.theme-light .container-6sXIoE {
+    background-color: var(--light-controls-background-color, #35ed86);
+    color: var(--light-dark-color-1, #000);
+}
+.theme-light .song-tIdBpF {
+    font-weight: 700;
+    color: var(--light-black-color-1, #000);
+}
+.theme-light .interpret-F93iqP {
+    font-weight: 600;
+    color: var(--light-black-color-2, #000000a2);
+}
+.theme-light #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE.maximized-vv2Wr0.withTimeline-824fT_ > div.inner-WRV6k5 > div.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz > button {
+    color: var(--light-black-color-1, #000);
+}
+.theme-light .container-6sXIoE .button-12Fmur.active-6TsW-_ {
+    color: var(--light-active-buttons, #fff) !important;
+}
+.theme-light #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE.maximized-vv2Wr0.withTimeline-824fT_ > div.inner-WRV6k5 > div.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz > button,
+.theme-light #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE.withTimeline-824fT_ > div.inner-WRV6k5 > div.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz > button,
+.theme-light #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE.maximized-vv2Wr0 > div > div.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz > button,
+.theme-light #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE > div > div.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz > button {
+    color: var(--light-black-color-1, #000);
+}
+.theme-light #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE.maximized-vv2Wr0.withTimeline-824fT_ > div.inner-WRV6k5 > div.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz > button:hover,
+.theme-light #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE.withTimeline-824fT_ > div.inner-WRV6k5 > div.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz > button:hover
+.theme-light #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE.maximized-vv2Wr0 > div > div.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz > button:hover,
+.theme-light #app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-6sXIoE > div > div.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz > button:hover {
+    background-color: var(--light-button-hover-background, #0000003d);
+    border: none !important;
+}
+.theme-light .bar-g2ZMIm {
+    background-color: var(--light-timeline-empty-zone, #0000003d);
+}
+
+/* Both */
+#app-mount .barText-lmqc5O {
+    font-weight: 500;
+}
+#app-mount .activityPanel-9icbyU {
+    border-bottom: none;
+}
+#app-mount .container-6sXIoE {
+    border-top: none !important;
+}
+#app-mount .container-6sXIoE ~ .container-YkUktl {
+    border-top: none !important;
+}
+
+/* Updates */
+#app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div.base-2jDfDU:before {
+    display: var(--version110_gsc, block) !important;
+    background-color: var(--dark-controls-background-color, #1c9a48) !important;
+    color: var(--dark-white-color-1, #fff) !important;
+}
+
+/* BD Addon Card */
+[id*="Green Spotify Controls"] .bd-addon-header .bd-meta:before {
+    content:"build " var(--gsc-build) " ";
+}
