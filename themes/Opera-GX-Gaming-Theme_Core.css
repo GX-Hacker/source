@@ -47,7 +47,7 @@
 /*~~ 2. Vars ~~*/
 :root {
     /* Theme Support */
-    --oggt-build: "260";
+    --oggt-build: "261";
     --oggt-info: "Opera GX Gaming Theme " var(--oggt-build);
     --theme-name: "Opera GX Gaming Theme";
 
@@ -6790,6 +6790,14 @@ div[style*="background-color: var(--background-secondary); border-radius: 8px; b
     background-color: rgba(var(--dark-background-color), var(--other-highlighted-transparency));
     color: rgb(var(--normal-font));
     border-radius: 0;
+}
+/* Server Boost progressbar */
+.container-2giAcK .divider-3qUeLQ {
+    display: none;
+}
+.progressBar-2yl2pi {
+    background: -webkit-gradient(linear, left top, right top, from(rgb(var(--accent-color-1))), to(rgb(var(--accent-color-2))));
+    background: linear-gradient(90deg, rgb(var(--accent-color-1)), rgb(var(--accent-color-2)));
 }
 /* NEW badges */
 .textBadge-1fdDPJ {
