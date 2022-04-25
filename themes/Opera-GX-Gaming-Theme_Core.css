@@ -47,7 +47,7 @@
 /*~~ 2. Vars ~~*/
 :root {
     /* Theme Support */
-    --oggt-build: "261";
+    --oggt-build: "262";
     --oggt-info: "Opera GX Gaming Theme " var(--oggt-build);
     --theme-name: "Opera GX Gaming Theme";
 
@@ -235,6 +235,8 @@
     --font-primary: var(--cf) !important;
     --brand-experiment: rgb(var(--accent-color-1)) !important;
     --channeltextarea-background: transparent !important;
+    --text-brand: rgb(var(--accent-color-1)) !important;
+    --search-popout-date-picker-border: solid 1px rgb(var(--accent-color-1)) !important;
 
     /* Created vars */
     --shadow-currentcolor: 0 0 1px currentColor;
@@ -1925,10 +1927,10 @@ body,
     background-color: rgba(var(--darker-background-color), var(--other-highlighted-transparency));
 }
 /* Ping badges */
-.numberBadge-37OJ3S[style*="background-color: rgb(88, 101, 242)"],
-.numberBadge-37OJ3S[style*="background: rgb(88, 101, 242)"] {
-    color: rgb(var(--font-in-accent)) !important;
-    font-weight: 700;
+.numberBadge-37OJ3S {
+    color: rgb(var(--fullwhite-font)) !important;
+    background-color: rgb(var(--gx-red)) !important;
+    font-weight: 700 !important;
 }
 /* Follow Announcement Channel */
 #app-mount .header-13P3fr {
@@ -1953,14 +1955,22 @@ body,
     transition: 200ms cubic-bezier(0, 0, 0.35, 1) !important;
     transition-property: background-color, border-color, color;
 }
-.app-focused .channelTextArea-1VQBuV:hover {
+.channelTextArea-1VQBuV .separator-3ng7S5:before {
+    border-color: rgba(var(--dark-background-color), var(--other-transparency));
+    transition: 200ms cubic-bezier(0, 0, 0.35, 1) !important;
+    transition-property: background-color, border-color, color;
+}
+.app-focused .channelTextArea-1VQBuV:hover,
+.app-focused .channelTextArea-1VQBuV:hover .separator-3ng7S5:before {
     border-color: rgba(var(--accent-color-2, 255, 55, 109), var(--other-highlighted-transparency));
 }
-.app-focused .channelTextAreaDisabled-1p2fQv:hover {
+.app-focused .channelTextAreaDisabled-1p2fQv:hover,
+.app-focused .channelTextAreaDisabled-1p2fQv:hover .separator-3ng7S5:before {
     border-color: rgba(var(--gx-red), var(--other-highlighted-transparency));
 }
-.app-focused .channelTextArea-1VQBuV:focus-within {
-    border: solid 1px rgba(var(--accent-color-1, 250, 30, 70), var(--other-highlighted-transparency));
+.app-focused .channelTextArea-1VQBuV:focus-within,
+.app-focused .channelTextArea-1VQBuV:focus-within .separator-3ng7S5:before {
+    border-color: rgba(var(--accent-color-1, 250, 30, 70), var(--other-highlighted-transparency));
 }
 .channelTextArea-1VQBuV .scrollableContainer-15eg7h {
     background-color: rgba(var(--darker-background-color), var(--chatbox-transparency));
@@ -2001,6 +2011,15 @@ body,
     font-weight: 400;
     /*font-size: 0.85rem;
     line-height: 1.125rem;*/
+}
+/* Send button and separator */
+.activeButtonChild-2hgLAO {
+    color: var(--text-brand);
+}
+#app-mount .button-y6hemj:focus-within .activeButtonChild-2hgLAO,
+#app-mount .button-y6hemj:focus .activeButtonChild-2hgLAO,
+#app-mount .button-y6hemj:hover .activeButtonChild-2hgLAO {
+    color: rgb(var(--accent-color-2));
 }
 /* Message editing */
 #app-mount .operations-3q3u6E {
@@ -2800,7 +2819,7 @@ Entire area: All borders
     clip-path: polygon(var(--cp-size) 0, 100% 0, 100% calc(100% - var(--cp-size)), calc(100% - var(--cp-size)) 100%, 0 100%, 0 var(--cp-size));
     --cp-size: 4px;
 }
-/* Channel Start (Welcome to #…) */
+/* Channel Start (Welcome to #channel) */
 .emptyChannelIcon-1YdEz2 {
     background-image: none !important;
 }
@@ -2812,6 +2831,21 @@ Entire area: All borders
     left: 33px;
     line-height: 70px;
     font-family: var(--cbcf);
+}
+/* Channel Start Buttons */
+.channelSettingButtons-sCQ_2T .button-1kija8 {
+    color: rgb(var(--accent-color-1));
+}
+/* Private Channel Start Roles */
+.role-23oyrw {
+    background: linear-gradient(135deg, rgb(var(--dark-background-color)), rgb(var(--darker-background-color)));
+    border-radius: 2px;
+    clip-path: polygon(var(--cp-size) 0, 100% 0, 100% calc(100% - var(--cp-size)), calc(100% - var(--cp-size)) 100%, 0 100%, 0 var(--cp-size));
+    --cp-size: 4px;
+    color: rgb(var(--normal-font));
+}
+.role-23oyrw:hover {
+    color: rgb(var(--normal-hover-font));
 }
 /* New messages */
 .newMessagesBar-mujexs,
@@ -3292,20 +3326,20 @@ code.inline {
     height: 26px;
 }
 /* Search in Chat */
-.searchBar-zdmu7v {
+.searchBar-jGtisZ {
     border-radius: 0;
     background: rgba(var(--darker-background-color), var(--other-transparency));
     border: solid 1px rgba(var(--dark-background-color), var(--other-transparency));
     height: 26px;
 }
-.searchBar-zdmu7v:hover,
-.focused-8aNhVB .searchBar-zdmu7v,
-.open-3y3yI_ .searchBar-zdmu7v {
+.searchBar-jGtisZ:hover,
+.focused-8aNhVB .searchBar-jGtisZ,
+.open-3y3yI_ .searchBar-jGtisZ {
     background: rgba(var(--dark-background-color), var(--other-highlighted-transparency));
     border-color: rgb(var(--accent-color-2));
 }
-.full-motion.app-focused .searchBar-zdmu7v:hover,
-.full-motion.app-focused .focused-8aNhVB .searchBar-zdmu7v {
+.full-motion.app-focused .searchBar-jGtisZ:hover,
+.full-motion.app-focused .focused-8aNhVB .searchBar-jGtisZ {
     animation: accent-blinking 450ms infinite;
 }
 #app-mount .container-2McqkF {
@@ -3390,13 +3424,14 @@ code.inline {
 .react-datepicker {
     border-radius: 0;
 }
-#app-mount .datePicker-70cO23 .datePickerHint-17MnA8 {
+#app-mount .datePicker-3iA7_k .datePickerHint-17MnA8 {
     border-top: solid 1px rgb(var(--accent-color-1));
 }
 #app-mount .calendarPicker-sDhzdi .react-datepicker__day {
     border-color: rgb(var(--accent-color-1));
     color: rgb(var(--fullwhite-font));
-    background-color: rgb(var(--darker-background-color))
+    background-color: rgb(var(--darker-background-color));
+    font-weight: normal;
 }
 .calendarPicker-sDhzdi .react-datepicker__day {
     width: 39px;
@@ -3404,8 +3439,13 @@ code.inline {
 }
 #app-mount .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--selected:hover,
 #app-mount .calendarPicker-sDhzdi .react-datepicker__day:hover {
-    color: rgb(var(--fullwhite-font));
+    color: rgb(var(--font-in-accent));
     background: linear-gradient(135deg, rgb(var(--accent-color-1)), rgb(var(--accent-color-2)));
+    font-weight: 900;
+}
+#app-mount .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--disabled {
+    color: rgb(var(--muted-font));
+    font-weight: normal;
 }
 #app-mount .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--selected::after {
     background: linear-gradient(135deg, rgb(var(--accent-color-1)), rgb(var(--accent-color-2)));
@@ -3428,13 +3468,13 @@ code.inline {
 .calendarPicker-sDhzdi .react-datepicker__week:last-of-type>.react-datepicker__day:last-of-type {
     border-radius: 0;
 }
-#app-mount .datePicker-70cO23 .datePickerHint-17MnA8 .hintValue-1x-flY {
+#app-mount .datePicker-3iA7_k .datePickerHint-Ir4715 .hintValue-V9hd8l {
     border: solid 1px rgb(var(--accent-color-1));
     border-radius: 0;
     background: rgb(var(--darker-background-color));
     color: rgb(var(--fullwhite-font));
 }
-#app-mount .datePicker-70cO23 .datePickerHint-17MnA8 .hintValue-1x-flY:hover {
+#app-mount .datePicker-3iA7_k .datePickerHint-Ir4715 .hintValue-V9hd8l:hover {
     background: rgb(var(--dark-background-color));
 }
 #app-mount .calendarPicker-sDhzdi .react-datepicker__header {
@@ -3444,8 +3484,8 @@ code.inline {
     border-bottom-color: rgb(var(--accent-color-1));
     color: rgb(var(--fullwhite-font));
 }
-#app-mount .datePicker-70cO23,
-#app-mount .datePicker-70cO23 .datePickerHint-17MnA8 {
+#app-mount .datePicker-3iA7_k,
+#app-mount .datePicker-3iA7_k .datePickerHint-17MnA8 {
     border-top: none;
 }
 #app-mount .calendarPicker-sDhzdi .react-datepicker__day-name {
@@ -3454,6 +3494,12 @@ code.inline {
 .calendarPicker-sDhzdi .react-datepicker__day-name {
     width: 39px;
 }
+#app-mount .calendarPicker-sDhzdi .react-datepicker__navigation.react-datepicker__navigation--next,
+#app-mount .calendarPicker-sDhzdi .react-datepicker__navigation.react-datepicker__navigation--previous {
+    border-color: rgb(var(--accent-color-1));
+    border-radius: 0;
+}
+/* Calendar arrow buttons - Trying to change the color by replacing the image by text - Disabled because it no longer works
 #app-mount .calendarPicker-sDhzdi .react-datepicker__navigation.react-datepicker__navigation--next,
 #app-mount .calendarPicker-sDhzdi .react-datepicker__navigation.react-datepicker__navigation--previous {
     border-color: rgb(var(--accent-color-1));
@@ -3483,9 +3529,9 @@ code.inline {
 #app-mount .calendarPicker-sDhzdi .react-datepicker__navigation.react-datepicker__navigation--next:before {
     content: ">"
 }
-#app-mount .datePicker-70cO23 .datePickerHint-17MnA8 .hint-3D5yHh {
+#app-mount .datePicker-3iA7_k .datePickerHint-Ir4715 .hint-3D5yHh {
     color: rgb(var(--normal-font));
-}
+}*/
 /* Search Results */
 .searchResultsWrap-5RVOkx {
     background: transparent;
@@ -6606,12 +6652,12 @@ div[style*="background-color: var(--background-secondary); border-radius: 8px; b
     border-bottom: none;
 }
 /* Memberlist */
-.membersWrap-3NUR2t {
+.container-2o3qEW {
     border-right: solid 1px var(--line-color);
     border-bottom: solid 1px var(--line-color);
-    height: calc(100% - 1px);
+    max-height: calc(100% - 1px);
 }
-.platform-web .membersWrap-3NUR2t {
+.platform-web .container-2o3qEW {
     border-right: none;
     border-bottom: none;
     border-left: solid 1px var(--line-color);
@@ -6631,16 +6677,12 @@ div[style*="background-color: var(--background-secondary); border-radius: 8px; b
     width: calc(var(--mSize, 240px) - 1px);
 }
 /* Servername and Banner */
-.header-2o-2hj,
 .header-3OsQeK {
-    margin-bottom: -1px;
-    height: 47px;
+    margin-bottom: -2px;
 }
-.platform-web .header-2o-2hj,
 .platform-web .header-3OsQeK {
-    height: 48px;
+    margin-bottom: 0;
 }
-.animatedContainer-1pJv5C,
 .animatedContainer-2laTjx {
     background: transparent;
     border-bottom: solid 1px var(--line-color);
@@ -6648,8 +6690,6 @@ div[style*="background-color: var(--background-secondary); border-radius: 8px; b
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-.bannerVisible-14J9lQ .name-3YKhmS,
-.bannerVisible-14J9lQ .button-2BMPJJ,
 .bannerVisible-Vkyg1I .name-3Uvkvr,
 .bannerVisible-Vkyg1I .button-2BMPJJ {
     color: rgb(var(--fullwhite-font));
@@ -7930,7 +7970,7 @@ div[style*="background-color: var(--background-secondary); border-radius: 8px; b
 
 /*~~ 16. DevTags ~~*/
 /* Original theme dev */
-div[class*="message"] img[src*="703638166162112516"] ~ h2[class*="header"] span[class*="name"]:nth-child(1)::after {
+div[class*="message"] img[src*="967175068377567263"] ~ h2[class*="header"] span[class*="name"]:nth-child(1)::after {
     background: linear-gradient(135deg, rgb(var(--accent-color-1)), rgb(var(--accent-color-2))) !important;
     color: rgb(var(--font-in-accent)) !important;
     font-size: 10px !important;
@@ -7957,14 +7997,14 @@ div[class*="message"] img[src*="703638166162112516"] ~ h2[class*="header"] span[
     clip-path: polygon(var(--cp-size) 0, 100% 0, 100% calc(100% - var(--cp-size)), calc(100% - var(--cp-size)) 100%, 0 100%, 0 var(--cp-size)) !important;
     --cp-size: 0.275rem !important;
 }
-div[class*="message"] img[src*="703638166162112516"] ~ h2[class*="header"] span[class*="name"]:nth-child(1)::after {
+div[class*="message"] img[src*="967175068377567263"] ~ h2[class*="header"] span[class*="name"]:nth-child(1)::after {
     content: "Theme Dev" !important;
 }
 #app-mount .username-added .author-username::after {
     display: none !important;
 }
-div[class*="message"] img[src*="703638166162112516"] ~ h2[class*="header"] span[class*="name"]:nth-child(1),
-div[class*="message"] img[src*="703638166162112516"] ~ h2[class*="header"] span[class*="name"]:nth-child(1):hover {
+div[class*="message"] img[src*="967175068377567263"] ~ h2[class*="header"] span[class*="name"]:nth-child(1),
+div[class*="message"] img[src*="967175068377567263"] ~ h2[class*="header"] span[class*="name"]:nth-child(1):hover {
     font-weight: bold !important;
     color: rgb(var(--accent-color-1)) !important;
     text-shadow: 0 0 1px rgb(var(--accent-color-2)) !important;
