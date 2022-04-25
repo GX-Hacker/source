@@ -1,4 +1,4 @@
-# Source code for my other repos
+# Source code for GXH Projects
 
 WARNING: Do not directly try do download and use, **unless you know what you are doing**. This is the source code, not the regular downloads. This repository should be used by others **for contribution purposes only**, and not for regular usage. By using the source code locally, you won't get automatic updates (if there are) and things may not work as expected.
 
