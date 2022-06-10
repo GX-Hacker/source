@@ -47,7 +47,7 @@
 /*~~ 2. Vars ~~*/
 :root {
     /* Theme Support */
-    --oggt-build: "264";
+    --oggt-build: "265";
     --oggt-info: "Opera GX Gaming Theme " var(--oggt-build);
     --theme-name: "Opera GX Gaming Theme";
 
@@ -2154,6 +2154,18 @@ Entire area: All borders
     height: 47px;
     box-shadow: none;
 }
+.container-3i3IzO {
+    border: solid 1px rgb(var(--dark-background-color));
+    border-radius: 0;
+    background-color: rgb(var(--darker-background-color));
+}
+.container-3i3IzO:hover {
+    border-color: rgb(var(--accent-color-2));
+    background-color: rgb(var(--dark-background-color));
+}
+.full-motion.app-focused .container-3i3IzO:hover {
+    animation: accent-blinking 450ms infinite;
+}
 /* Embeds */
 .embedFull-1HGV2S {
     background-color: rgba(var(--darker-background-color), var(--other-transparency));
@@ -3997,11 +4009,11 @@ code.inline {
     padding: 0 6px;
     margin-top: 1px;
 }
-.members-3WRCEx .clickable-28SzVr:hover .layout-1qmrhw {
+.members-3WRCEx .layout-1qmrhw:hover {
     background-color: rgba(var(--dark-background-color), var(--other-transparency));
     cursor: default;
 }
-.members-3WRCEx .clickable-28SzVr:hover span.roleColor-nA7BqX::after {
+.members-3WRCEx .layout-1qmrhw:hover span.roleColor-nA7BqX::after {
     border-color: currentColor;
 }
 .container-1oeRFJ {
@@ -5886,6 +5898,9 @@ div[style*="background-color: var(--background-secondary); border-radius: 8px; b
 #app-mount pre code[class~=assembly i]:before {
     content: "</> Assembly (asm)";
 }
+#app-mount pre code[class~=ansi i]:before {
+    content: "</> ANSI escape code (ansi)";
+}
 .powercord-codeblock-lang {
     display: none;
 }
@@ -6569,6 +6584,7 @@ div[style*="background-color: var(--background-secondary); border-radius: 8px; b
     background-color: transparent !important;
 }
 .platform-web .title-31SJ6t,
+.platform-web .container-ZMc96U,
 .platform-web .container-3XgAHv {
     border-right: none;
     border-top: none;
